@@ -20,16 +20,29 @@ import MenuItem from '@mui/material/MenuItem';
 import AddCardIcon from '@mui/icons-material/AddCard';
 import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import {Link} from 'react-router-dom'
+import SmsOutlinedIcon from '@mui/icons-material/SmsOutlined';
+import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
+import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
 
 const Navbar=()=>{
     const [count,setCount]=useState(1)
     const [search,setSearch]=useState('')
     const [anchorEl,setAnchorEl] = useState(null);
+    const [anchorEH,setAnchorEH] = useState(null);
+
     const [acolor,setAcolor]=useState(false)
-    const open = Boolean(anchorEl);
-const close=()=>{
+    const [hcolor,setHcolor]=useState(false)
+
+    const openA = Boolean(anchorEl);
+    const openH = Boolean(anchorEH);
+
+    const closeA=()=>{
     setAnchorEl(null)
     setAcolor(false)
+}
+const closeH=()=>{
+    setAnchorEH(null)
+    setHcolor(false)
 }
     useEffect(()=>{
         const interval=setInterval(()=>{
@@ -42,6 +55,13 @@ const close=()=>{
     const handleAccountClick=(e)=>{
         setAnchorEl(e.currentTarget)
         setAcolor(true)
+        
+    }
+
+    
+    const handleHelpClick=(e)=>{
+        setAnchorEH(e.currentTarget)
+        setHcolor(true)
         
     }
 
@@ -101,18 +121,55 @@ const close=()=>{
                     </Button>
                      <Menu
                         anchorEl={anchorEl}
-                        open={open}
-                        onClose={close}>
+                        open={openA}
+                        onClose={closeA}>
 
                         <MenuItem onClick={()=>{}}>
                             <Box sx={{ height:55 ,borderBottom:1,width:160}}>
-                                <Button sx={{ backgroundColor:'#a84119',width:135,marginLeft:1.5,color:'white' }}>Sign In</Button>
+                                <Button sx={{ ":hover": {
+                                       backgroundColor: "#a84119"
+                                   },backgroundColor:'#a84119',width:135,marginLeft:1.5,color:'white' }}>Sign In</Button>
                             </Box>
                         </MenuItem>
                         <MenuItem onClick={()=>{}}><PersonOutlineOutlinedIcon sx={{marginRight:1}}/> My account</MenuItem>
                         <MenuItem onClick={()=>{}}><AddCardIcon sx={{marginRight:1}}/> Orders</MenuItem>
                         <MenuItem onClick={()=>{}}><FavoriteBorderOutlinedIcon sx={{marginRight:1}}/> Saved Items</MenuItem>
 
+                     </Menu>
+
+
+                     <Button  sx={{ 
+                           ...(hcolor ===true &&{
+                            backgroundColor:'grey'
+                           }),
+                            color:'black',                 
+                           ":hover": {
+                            color: "#a84119"
+                                   },
+                            height:36       
+                                }} 
+
+                       onClick={handleHelpClick}> <HelpOutlineOutlinedIcon /> Help {hcolor ?<KeyboardArrowUpOutlinedIcon/> : <KeyboardArrowDownOutlinedIcon />}
+                    </Button>
+                     <Menu
+                        anchorEl={anchorEH}
+                        open={openH}
+                        onClose={closeH}>
+
+                       
+                        <MenuItem onClick={()=>{}}> Help Center</MenuItem>
+                        <MenuItem onClick={()=>{}}> Place an Order</MenuItem>
+                        <MenuItem onClick={()=>{}}> Track Your Order</MenuItem>
+                        <MenuItem onClick={()=>{}}> Order Cancellation</MenuItem>
+                        <MenuItem onClick={()=>{}}> Returns & Refunds</MenuItem>
+                        <MenuItem onClick={()=>{}}>Payment & Hulubebere Account</MenuItem>
+                        <MenuItem onClick={()=>{}}>
+                                <Button sx={{ backgroundColor:'#a84119',width:135,marginLeft:1.5,color:'white' ,marginTop:1,
+                                ":hover": {
+                                       backgroundColor: "#a84119"
+                                   }
+                                   }}><SmsOutlinedIcon sx={{marginRight:1}}/> LIVE CHAT</Button>
+                        </MenuItem>
                      </Menu>
 
 
