@@ -23,6 +23,7 @@ import {Link} from 'react-router-dom'
 import SmsOutlinedIcon from '@mui/icons-material/SmsOutlined';
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined';
 import KeyboardArrowUpOutlinedIcon from '@mui/icons-material/KeyboardArrowUpOutlined';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 const Navbar=()=>{
     const [count,setCount]=useState(1)
@@ -85,28 +86,34 @@ const closeH=()=>{
                          <PaymentsIcon />pay
                          </Stack>
                 </Stack>
-                <Stack direction='row' sx={{ backgroundColor:'white',height:80,boxShadow:3 }} >
+
+                <Stack className='realNav' direction='row' sx={{ backgroundColor:'white',height:80,boxShadow:3 }} >
+                 
                  <Link to='/' style={{ textDecoration:'none' }}  >
                   <h1 style={{color:'black',marginLeft:40,fontSize:34,fontFamily:'fantasy'}}>HuleBebere <ShoppingCartIcon sx={{color:'#a84119',fontSize:40}}/></h1> 
                  </Link>
-                 <Stack direction='row' pl={1} mt={3} sx={{ border:'1px solid',width:430,height:31,borderRadius:1 }}>
-                 <SearchIcon sx={{paddingTop:0.5}}/>
-                   <input 
-                     type='text'
-                     placeholder='Search products,brands and catagories'
-                     onChange={(e)=>setSearch(e.target.value)}
+
+                 <Stack className='searchInput' direction='row' pl={1} mt={3.3} ml={12} sx={{ border:'1px solid',width:430,height:36,borderRadius:1 }}>
+                   <SearchIcon sx={{paddingTop:0.5}}/>
+                     <input 
+                      type='text'
+                      placeholder='Search products,brands and catagories'
+                      onChange={(e)=>setSearch(e.target.value)}
                       style={{ border:'none',outline:'none',width:370 }}
                       value={search}
 
                     />
-                    {search && <IconButton onClick={()=>setSearch('')}><ClearOutlinedIcon  sx={{paddingTop:0.3}}/></IconButton> }
+                     {search && <IconButton onClick={()=>setSearch('')}><ClearOutlinedIcon  sx={{paddingTop:0.3}}/></IconButton> }
                  </Stack>
-                 <Stack direction='row' spacing={1}>
-                   <Button variant='contained' sx={{ height:30,backgroundColor:'#a84119',width:78 }}>
+
+                 <Stack className='navInfo' direction='row' spacing={1} mt={3.4} ml={1} >
+                   <Button variant='contained' sx={{ ":hover": {
+                            backgroundColor: "#a84119"
+                                   }, height:34.3,backgroundColor:'#a84119',width:78 }}>
                     Search
                   </Button>
                    
-                    <Button  sx={{ 
+                  <Button  sx={{ 
                            ...(acolor ===true &&{
                             backgroundColor:'grey'
                            }),
@@ -164,16 +171,23 @@ const closeH=()=>{
                         <MenuItem onClick={()=>{}}> Returns & Refunds</MenuItem>
                         <MenuItem onClick={()=>{}}>Payment & Hulubebere Account</MenuItem>
                         <MenuItem onClick={()=>{}}>
-                                <Button sx={{ backgroundColor:'#a84119',width:135,marginLeft:1.5,color:'white' ,marginTop:1,
+                            <Box sx={{ borderTop:1,width:250 }}>
+                                <Button sx={{ backgroundColor:'#a84119',width:145,marginLeft:5,color:'white' ,marginTop:1,
                                 ":hover": {
                                        backgroundColor: "#a84119"
                                    }
-                                   }}><SmsOutlinedIcon sx={{marginRight:1}}/> LIVE CHAT</Button>
+                                   }}><SmsOutlinedIcon sx={{marginRight:1}}/> LIVE CHAT</Button></Box>
                         </MenuItem>
                      </Menu>
 
-
+                     <Link to='/' style={{ textDecoration:'none'}}>
+                         <Button sx={{ color:'black',fontSize:17,fontFamily:'sans-serif' ,":hover": {
+                                color: "#a84119"
+                                   }, }}><ShoppingCartOutlinedIcon sx={{marginRight:1}}/>Cart</Button>
+                  </Link>
                  </Stack>
+                  
+
                 </Stack>
         
         
