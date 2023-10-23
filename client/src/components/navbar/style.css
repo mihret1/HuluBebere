@@ -1,0 +1,16 @@
+
+.one{
+    height: 60px;
+}
+.title{
+    width:300px;
+    animation-name: move;
+  animation-delay: 1500ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    from { left: 0px; }
+    to { left: 400px; }
+  }
