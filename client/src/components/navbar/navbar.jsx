@@ -15,13 +15,22 @@ import IconButton from '@mui/material/IconButton';
 import ManageAccountsOutlinedIcon from '@mui/icons-material/ManageAccountsOutlined';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import KeyboardArrowDownOutlinedIcon from '@mui/icons-material/KeyboardArrowDownOutlined';
-
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import AddCardIcon from '@mui/icons-material/AddCard';
+import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlined';
 import {Link} from 'react-router-dom'
 
 const Navbar=()=>{
     const [count,setCount]=useState(1)
     const [search,setSearch]=useState('')
-    
+    const [anchorEl,setAnchorEl] = useState(null);
+    const [acolor,setAcolor]=useState(false)
+    const open = Boolean(anchorEl);
+const close=()=>{
+    setAnchorEl(null)
+    setAcolor(false)
+}
     useEffect(()=>{
         const interval=setInterval(()=>{
                 setCount(count+1)
@@ -29,6 +38,12 @@ const Navbar=()=>{
         },2000)
         return ()=>clearInterval(interval)
     },[count])
+
+    const handleAccountClick=(e)=>{
+        setAnchorEl(e.currentTarget)
+        setAcolor(true)
+        
+    }
 
 
     return(
@@ -67,8 +82,40 @@ const Navbar=()=>{
                     {search && <IconButton onClick={()=>setSearch('')}><ClearOutlinedIcon  sx={{paddingTop:0.3}}/></IconButton> }
                  </Stack>
                  <Stack direction='row' spacing={1}>
-                   <Button variant='contained' sx={{ height:30,backgroundColor:'#a84119',width:78 }}>Search</Button>
-                    <Button> <ManageAccountsOutlinedIcon /> Account<></> </Button>
+                   <Button variant='contained' sx={{ height:30,backgroundColor:'#a84119',width:78 }}>
+                    Search
+                  </Button>
+                   
+                    <Button  sx={{ 
+                           ...(acolor ===true &&{
+                            backgroundColor:'grey'
+                           }),
+                            color:'black',                 
+                           ":hover": {
+                            color: "#a84119"
+                                   },
+                            height:36       
+                                }} 
+
+                       onClick={handleAccountClick}> <ManageAccountsOutlinedIcon /> Account <KeyboardArrowDownOutlinedIcon />
+                    </Button>
+                     <Menu
+                        anchorEl={anchorEl}
+                        open={open}
+                        onClose={close}>
+
+                        <MenuItem onClick={()=>{}}>
+                            <Box sx={{ height:55 ,borderBottom:1,width:160}}>
+                                <Button sx={{ backgroundColor:'#a84119',width:135,marginLeft:1.5,color:'white' }}>Sign In</Button>
+                            </Box>
+                        </MenuItem>
+                        <MenuItem onClick={()=>{}}><PersonOutlineOutlinedIcon sx={{marginRight:1}}/> My account</MenuItem>
+                        <MenuItem onClick={()=>{}}><AddCardIcon sx={{marginRight:1}}/> Orders</MenuItem>
+                        <MenuItem onClick={()=>{}}><FavoriteBorderOutlinedIcon sx={{marginRight:1}}/> Saved Items</MenuItem>
+
+                     </Menu>
+
+
                  </Stack>
                 </Stack>
         
