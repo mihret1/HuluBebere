@@ -1,11 +1,11 @@
 import { Box, Stack } from "@mui/material"
-
+import BodyOne from "../bodyOne/bodyOne"
 
 
 const Home=()=>{
     return(
         <Box>
-            Hey Home
+           <BodyOne />
         </Box>
     )
 }

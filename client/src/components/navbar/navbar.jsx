@@ -69,7 +69,7 @@ const closeH=()=>{
 
     return(
         
-        <Box className='' sx={{ backgroundColor:'red'}}>
+        <Box className=''>
            
                              
                 <Stack sx={{ backgroundColor:'#86442d',height:65 }}>
@@ -87,7 +87,7 @@ const closeH=()=>{
                          </Stack>
                 </Stack>
 
-                <Stack className='realNav' direction='row' sx={{ backgroundColor:'white',height:80,boxShadow:3 }} >
+                <Stack  className='realNav' direction='row' sx={{ backgroundColor:'white',height:80,boxShadow:3 }} >
                  
                  <Link to='/' style={{ textDecoration:'none' }}  >
                   <h1 style={{color:'black',marginLeft:40,fontSize:34,fontFamily:'fantasy'}}>HuleBebere <ShoppingCartIcon sx={{color:'#a84119',fontSize:40}}/></h1> 

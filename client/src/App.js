@@ -6,7 +6,7 @@ import Home from "./components/home/home";
 function App() {
   return (
     <BrowserRouter>
-    <Box>
+    <Box sx={{ backgroundColor:'#ece7e5' }}>
      <Navbar />
      <Routes>
           <Route exact={true} path="/" element={<Home />}/>
