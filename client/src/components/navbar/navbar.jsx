@@ -30,7 +30,6 @@ const Navbar=()=>{
     const [search,setSearch]=useState('')
     const [anchorEl,setAnchorEl] = useState(null);
     const [anchorEH,setAnchorEH] = useState(null);
-
     const [acolor,setAcolor]=useState(false)
     const [hcolor,setHcolor]=useState(false)
 
@@ -40,11 +39,11 @@ const Navbar=()=>{
     const closeA=()=>{
     setAnchorEl(null)
     setAcolor(false)
-}
-const closeH=()=>{
+    }
+    const closeH=()=>{
     setAnchorEH(null)
     setHcolor(false)
-}
+    }
     useEffect(()=>{
         const interval=setInterval(()=>{
                 setCount(count+1)
@@ -58,8 +57,6 @@ const closeH=()=>{
         setAcolor(true)
         
     }
-
-    
     const handleHelpClick=(e)=>{
         setAnchorEH(e.currentTarget)
         setHcolor(true)
@@ -107,9 +104,11 @@ const closeH=()=>{
                  </Stack>
 
                  <Stack className='navInfo' direction='row' spacing={1} mt={3.4} ml={1} >
-                   <Button variant='contained' sx={{ ":hover": {
+                   <Button variant='contained'
+                    sx={{ ":hover": {
                             backgroundColor: "#a84119"
-                                   }, height:34.3,backgroundColor:'#a84119',width:78 }}>
+                            },
+                             height:34.3,backgroundColor:'#a84119',width:78 }}>
                     Search
                   </Button>
                    
