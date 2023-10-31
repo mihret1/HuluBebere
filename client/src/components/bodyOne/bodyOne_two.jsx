@@ -1,8 +1,11 @@
+import { Box } from "@mui/material"
 
 
 const BodyOneTwo=()=>{
     return(
-    <> body two </>
+    <Box> 
+       <img /> 
+    </Box>
     )
 }
 
