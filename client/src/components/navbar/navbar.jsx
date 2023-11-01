@@ -74,15 +74,15 @@ const Navbar=()=>{
                         FREE DELIVERY
                     </h1>
                 </Stack>
-                <Stack direction='row' spacing={40} ml={18} pt={1} sx={{ height:28}}>
-                        
-                    <StarsIcon /> sell on HuluBebere
+                <Stack direction='row' spacing={40} ml={18} pt={1} sx={{ height:28}}>                        
+                      <StarsIcon /> 
+                      sell on HuluBebere
                       <Stack direction='row' spacing={2}>
                          <LiquorIcon   />party
                          <RestaurantIcon /> food
                          <PaymentsIcon />pay
-                         </Stack>
-                </Stack>
+                        </Stack>
+                 </Stack>
 
                 <Stack  className='realNav' direction='row' sx={{ backgroundColor:'white',height:80,boxShadow:3 }} >
                  
@@ -109,7 +109,7 @@ const Navbar=()=>{
                             backgroundColor: "#a84119"
                             },
                              height:34.3,backgroundColor:'#a84119',width:78 }}>
-                    Search
+                        Search
                   </Button>
                    
                   <Button  sx={{ 
