@@ -49,9 +49,8 @@ import { ComOne } from "./bodyone_componets";
   
 const BodyOneTwo=({hoverEffect,isShown})=>{
   const [cursorr,setCursorr]=useState(false)
-
-
-    const [count,setCount]=useState(1)    
+    const [count,setCount]=useState(1)  
+      
     useEffect(()=>{
       const interval=setInterval(()=>{
         setCount((prev)=>prev+1)
