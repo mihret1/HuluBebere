@@ -24,7 +24,7 @@ const BodyOne=()=>{
     }
 
     return(
-    <Stack direction='row' spacing={2} pl={10} pr={5} pt={3} sx={{ height:425 }}>
+    <Stack direction='row'  pl={10} pr={5} pt={3} sx={{ height:425 }}>
          <Stack p={2} spacing={1.3} sx={{ width:185,backgroundColor:'white',borderRadius:1 }}>
             <Link to='/posts' style={{  textDecoration:'none',}}>
               <ButtonBase  onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}
