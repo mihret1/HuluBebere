@@ -8,26 +8,37 @@ import CoffeeMakerOutlinedIcon from '@mui/icons-material/CoffeeMakerOutlined';
 import VaccinesOutlinedIcon from '@mui/icons-material/VaccinesOutlined';
 import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import img1 from '../../assets/bodyone/img1.jpg'
-
+import { useState } from 'react';
 
 import BodyOneTwo from './bodyOne_two';
 import BodyOneThree from './bodyOne_three';
 
 const BodyOne=()=>{
+     const [hoverEffect,setHoverEffect]=useState(0)
+    const [isShown,setIsShown]=useState(false)
+
+    const mouseEnterr=(val)=>{
+      setIsShown(true)
+      setHoverEffect(val)
+    }
+
     return(
     <Stack direction='row' spacing={4} pl={11} pr={11} pt={3} sx={{ height:425 }}>
          <Stack p={2} spacing={1.3} sx={{ width:185,backgroundColor:'white',borderRadius:1 }}>
             <Link to='/posts' style={{  textDecoration:'none',}}>
-              <ButtonBase  sx={{  color:'black',
+              <ButtonBase  onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}
+                sx={{  color:'black',
                                  paddingRight:9,
-                                ":hover": {
-                            color: "#a84119"
-                            },
-                             }}><ShopOutlinedIcon /> Official storee </ButtonBase>
+                                 ":hover": {
+                                    color: "#a84119"
+                                         },
+                             }}><ShopOutlinedIcon /> Official storee 
+              </ButtonBase>
             </Link> 
 
             <Link style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black',
+              <ButtonBase onMouseEnter={()=>mouseEnterr(2)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black',
                            ":hover": {
                             color: "#994827"
                             },
@@ -92,7 +103,9 @@ const BodyOne=()=>{
          
          <Box><BodyOneTwo /> </Box>
          <Box><BodyOneThree /></Box>
+         {/* <Box>  {isShown} and {hoverEffect}</Box> */}
     </Stack>
+    
     )
 }
 
