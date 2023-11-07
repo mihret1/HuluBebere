@@ -105,6 +105,7 @@ const BodyOneTwo=({hoverEffect,isShown})=>{
       </>)}
 
       {(isShown && hoverEffect===1) && (<Box> hey this is navbar 1</Box>)}
+        
         <Stack direction='row' spacing={1}>
 
 
