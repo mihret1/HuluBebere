@@ -45,8 +45,11 @@ import img1000 from  '../../assets/bodyone/35.jpg'
 import img10000 from  '../../assets/bodyone/img18.jpg'
 
 import style from './BO.css'
-
+import { ComOne } from "./bodyone_componets";
+  
 const BodyOneTwo=({hoverEffect,isShown})=>{
+  const [cursorr,setCursorr]=useState(false)
+
 
     const [count,setCount]=useState(1)    
     useEffect(()=>{
@@ -62,7 +65,7 @@ const BodyOneTwo=({hoverEffect,isShown})=>{
     return(
     <Box> 
 
-       {!isShown && (<>
+       {(!isShown && !cursorr) && (<>
 
       {(count===1)&&<img  src={img1} style={{ height:423,width:620 }}/>}
       {(count===2)&&<img  src={img11} style={{ height:423,width:620 }}/>}
@@ -104,8 +107,9 @@ const BodyOneTwo=({hoverEffect,isShown})=>{
 
       </>)}
 
-      {(isShown && hoverEffect===1) && (<Box> hey this is navbar 1</Box>)}
-        
+      {(isShown && hoverEffect===1) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
         <Stack direction='row' spacing={1}>
 
 

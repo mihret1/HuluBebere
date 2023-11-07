@@ -4,10 +4,10 @@ import { Link } from "react-router-dom"
 
 
 
-export const ComOne=()=>{
+export const ComOne=({cursorr,setCursorr})=>{
     return(
-        <Stack spacing={2}>
-
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+            {/* {`${cursorr}`} */}
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory</h3>
@@ -33,6 +33,7 @@ export const ComOne=()=>{
                  <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
                  <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
               </Stack>
+              
            </Stack>
 
             <Stack direction='row' spacing={3}>          
@@ -62,6 +63,32 @@ export const ComOne=()=>{
               </Stack>
            </Stack>
            
+           <Stack direction='row' spacing={3}>          
+              <Stack spacing={0.5}>
+                 <h3>Phone and accesory</h3>
+                 <Divider />
+                  <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+                  <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+                  <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+                  <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+              </Stack>
+              <Stack spacing={0.5}>
+                 <h3>Phone and accesory</h3>
+                 <Divider />
+                 <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+                 <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+                 <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+                 <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+              </Stack>
+              <Stack spacing={0.5}>
+                 <h3>Phone and accesory</h3>
+                 <Divider />
+                 <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+                 <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+                 <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+                 <span ><Link style={{textDecoration:'none', color:'black', }}><Box sx={{ ":hover":{fontSize:18,fontWeight:'bold'} }}>sumsung</Box></Link></span>
+              </Stack>
+           </Stack>
         </Stack>
     )
 }

@@ -6,7 +6,7 @@ const Home=()=>{
     return(
         <Box>
            <BodyOne />
-            <ComOne />
+            {/* <ComOne /> */}
         </Box>
     )
 }
