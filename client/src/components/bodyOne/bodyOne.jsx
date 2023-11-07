@@ -17,7 +17,6 @@ const BodyOne=()=>{
      const [hoverEffect,setHoverEffect]=useState(0)
     const [isShown,setIsShown]=useState(false)
 
-
     const mouseEnterr=(val)=>{
       setIsShown(true)
       setHoverEffect(val)
@@ -25,18 +24,20 @@ const BodyOne=()=>{
 
     return(
     <Stack direction='row'  pl={10} pr={5} pt={3} sx={{ height:425 }}>
-         <Stack p={2} spacing={1.3} sx={{ width:185,backgroundColor:'white',borderRadius:1 }}>
+         <Stack p={2} spacing={1.3} sx={{ width:190,backgroundColor:'white',borderRadius:1 }}>
+          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>
             <Link to='/posts' style={{  textDecoration:'none',}}>
-              <ButtonBase  onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}
-                sx={{  color:'black',
-                                 paddingRight:9,
+              <ButtonBase 
+              //  onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}
+                sx={{ ...(isShown===true && {color:'#a84119'}), ...(isShown===false && {color:'black'}),
+                                  // paddingRight:,
                                  ":hover": {
                                     color: "#a84119"
                                          },
                              }}><ShopOutlinedIcon /> Official storee 
               </ButtonBase>
             </Link> 
-
+            </Box>
             <Link style={{ textDecoration:'none' }}>
               <ButtonBase onMouseEnter={()=>mouseEnterr(2)} onMouseLeave={() => setIsShown(false)}
               sx={{ color:'black',
