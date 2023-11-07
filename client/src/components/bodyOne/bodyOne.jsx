@@ -47,53 +47,63 @@ const BodyOne=()=>{
                              }}><ShopOutlinedIcon /> Official store</ButtonBase>
             </Link>
             <Link style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black',":hover": {
+              <ButtonBase  onMouseEnter={()=>mouseEnterr(3)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black',":hover": {
                             color: "#994827"
                             } ,paddingRight:9,
                           }}><ShopOutlinedIcon /> Official store</ButtonBase>
             </Link>
             <Link style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black',paddingRight:9,":hover": {
+              <ButtonBase  onMouseEnter={()=>mouseEnterr(4)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black',paddingRight:9,":hover": {
                             color: "#994827"
                             } }}><ShopOutlinedIcon /> Official store</ButtonBase>
             </Link>
             <Link to='/posts' style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black' ,paddingRight:9,":hover": {
+              <ButtonBase onMouseEnter={()=>mouseEnterr(5)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black' ,paddingRight:9,":hover": {
                             color: "#994827"
                             }}}><ShopOutlinedIcon /> Official store </ButtonBase>
             </Link> 
             <Link style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black',paddingRight:9,":hover": {
+              <ButtonBase onMouseEnter={()=>mouseEnterr(6)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black',paddingRight:9,":hover": {
                             color: "#994827"
                             } }}><ShopOutlinedIcon /> Official store</ButtonBase>
             </Link>
             <Link style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black',paddingRight:9,":hover": {
+              <ButtonBase onMouseEnter={()=>mouseEnterr(7)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black',paddingRight:9,":hover": {
                             color: "#994827"
                             } }}><ShopOutlinedIcon /> Official store</ButtonBase>
             </Link>
             <Link style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black' ,paddingRight:9,":hover": {
+              <ButtonBase onMouseEnter={()=>mouseEnterr(8)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black' ,paddingRight:9,":hover": {
                             color: "#994827"
                             }}}><ShopOutlinedIcon /> Official store</ButtonBase>
             </Link>
             <Link to='/posts' style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black' ,paddingRight:9,":hover": {
+              <ButtonBase onMouseEnter={()=>mouseEnterr(9)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black' ,paddingRight:9,":hover": {
                             color: "#994827"
                             }}}><ShopOutlinedIcon /> Official store </ButtonBase>
             </Link> 
             <Link style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black',paddingRight:9,":hover": {
+              <ButtonBase onMouseEnter={()=>mouseEnterr(10)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black',paddingRight:9,":hover": {
                             color: "#994827"
                             } }}><ShopOutlinedIcon /> Official store</ButtonBase>
             </Link>
             <Link style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black',paddingRight:9,":hover": {
+              <ButtonBase onMouseEnter={()=>mouseEnterr(11)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black',paddingRight:9,":hover": {
                             color: "#994827"
                             } }}><ShopOutlinedIcon /> Official store</ButtonBase>
             </Link>
             <Link style={{ textDecoration:'none' }}>
-              <ButtonBase sx={{ color:'black',paddingRight:9,":hover": {
+              <ButtonBase onMouseEnter={()=>mouseEnterr(12)} onMouseLeave={() => setIsShown(false)}
+              sx={{ color:'black',paddingRight:9,":hover": {
                             color: "#994827"
                             } }}><ShopOutlinedIcon /> Official store</ButtonBase>
             </Link>
@@ -101,9 +111,18 @@ const BodyOne=()=>{
 
          </Stack>
          
-         <Box><BodyOneTwo /> </Box>
+         <Box>
+
+               <BodyOneTwo 
+                 hoverEffect={hoverEffect} 
+                 isShown={isShown}
+               /> 
+
+
+          </Box>
          <Box><BodyOneThree /></Box>
-         {/* <Box>  {isShown} and {hoverEffect}</Box> */}
+
+         {/* <Box>  {`${isShown} and ${hoverEffect}`}</Box> */}
     </Stack>
     
     )

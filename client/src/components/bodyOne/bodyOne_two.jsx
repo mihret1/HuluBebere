@@ -46,9 +46,9 @@ import img10000 from  '../../assets/bodyone/img18.jpg'
 
 import style from './BO.css'
 
-const BodyOneTwo=()=>{
-    const [count,setCount]=useState(1)
-    
+const BodyOneTwo=({hoverEffect,isShown})=>{
+
+    const [count,setCount]=useState(1)    
     useEffect(()=>{
       const interval=setInterval(()=>{
         setCount((prev)=>prev+1)
@@ -61,6 +61,9 @@ const BodyOneTwo=()=>{
   
     return(
     <Box> 
+
+       {!isShown && (<>
+
       {(count===1)&&<img  src={img1} style={{ height:423,width:620 }}/>}
       {(count===2)&&<img  src={img11} style={{ height:423,width:620 }}/>}
       {(count===3)&&<img  src={img111} style={{ height:423,width:620 }}/>}
@@ -99,7 +102,12 @@ const BodyOneTwo=()=>{
       {(count===39)&&<img  src={img1000} style={{ height:423,width:620 }}/>}
       {(count===40)&&<img  src={img10000} style={{ height:423,width:620 }}/>}
 
+      </>)}
+
+      {(isShown && hoverEffect===1) && (<Box> hey this is navbar 1</Box>)}
         <Stack direction='row' spacing={1}>
+
+
          <IconButton  onClick={()=>{setCount(1)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===1 || count===2 || count===3 || count===4) &&{color:'#86442d'})}}/></IconButton>
          <IconButton  onClick={()=>{setCount(5)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===5 || count===6 || count===7 || count===8)&&{color:'#86442d'})}}/></IconButton>
          <IconButton  onClick={()=>{setCount(9)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===9 || count===10 || count===11 || count===12)&&{color:'#86442d'})}}/></IconButton>
@@ -110,9 +118,7 @@ const BodyOneTwo=()=>{
          <IconButton  onClick={()=>{setCount(29)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===29 || count===30 || count===31 || count===32) &&{color:'#86442d'})}}/></IconButton>
          <IconButton  onClick={()=>{setCount(33)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===33 || count===34 || count===35 || count===36) &&{color:'#86442d'})}}/></IconButton>
          <IconButton  onClick={()=>{setCount(37)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===37 || count===38 || count===39 || count===40) &&{color:'#86442d'})}}/></IconButton>
-
-        
-        
+                
         </Stack>
 
     </Box>
