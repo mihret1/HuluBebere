@@ -93,6 +93,7 @@ export const ComOne=({cursorr,setCursorr})=>{
 }
 
 
+
 export const ComTwo=({cursorr,setCursorr})=>{
     return(
         <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
