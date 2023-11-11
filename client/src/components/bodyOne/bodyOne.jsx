@@ -25,7 +25,7 @@ const BodyOne=()=>{
 
     return(
     <Stack direction='row'  pl={10} pr={5} pt={3} sx={{ height:425 }}>
-      <Stack p={2} spacing={1.3} sx={{ width:190,backgroundColor:'white',borderRadius:1 }}>
+         <Stack p={2} spacing={1.3} sx={{ width:190,backgroundColor:'white',borderRadius:1 }}>
           
           <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>
           <Link to='/posts' style={{  textDecoration:'none',}}>
@@ -81,63 +81,63 @@ const BodyOne=()=>{
           </Link> 
           </Box>
 
-          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>
+          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(7)} onMouseLeave={() => setIsShown(false)}>
           <Link to='/posts' style={{  textDecoration:'none',}}>
             <ButtonBase 
-              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===1) && {color:'#a84119'}), ...((hoverEffect !== 1) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
+              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===7) && {color:'#a84119'}), ...((hoverEffect !== 8) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
                 <ShopOutlinedIcon /> Official storee 
             </ButtonBase>
           </Link> 
           </Box>
 
-          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>
+          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(8)} onMouseLeave={() => setIsShown(false)}>
           <Link to='/posts' style={{  textDecoration:'none',}}>
             <ButtonBase 
-              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===1) && {color:'#a84119'}), ...((hoverEffect !== 1) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
+              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===8) && {color:'#a84119'}), ...((hoverEffect !== 8) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
                 <ShopOutlinedIcon /> Official storee 
             </ButtonBase>
           </Link> 
           </Box>
 
-          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>
+          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(9)} onMouseLeave={() => setIsShown(false)}>
           <Link to='/posts' style={{  textDecoration:'none',}}>
             <ButtonBase 
-              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===1) && {color:'#a84119'}), ...((hoverEffect !== 1) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
+              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===9) && {color:'#a84119'}), ...((hoverEffect !== 9) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
                 <ShopOutlinedIcon /> Official storee 
             </ButtonBase>
           </Link> 
           </Box> 
 
-          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>
+          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(10)} onMouseLeave={() => setIsShown(false)}>
           <Link to='/posts' style={{  textDecoration:'none',}}>
             <ButtonBase 
-              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===1) && {color:'#a84119'}), ...((hoverEffect !== 1) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
+              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===10) && {color:'#a84119'}), ...((hoverEffect !== 10) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
                 <ShopOutlinedIcon /> Official storee 
             </ButtonBase>
           </Link> 
           </Box>
 
-          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>
+          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(11)} onMouseLeave={() => setIsShown(false)}>
           <Link to='/posts' style={{  textDecoration:'none',}}>
             <ButtonBase 
-              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===1) && {color:'#a84119'}), ...((hoverEffect !== 1) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
+              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===11) && {color:'#a84119'}), ...((hoverEffect !== 11) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
                 <ShopOutlinedIcon /> Official storee 
             </ButtonBase>
           </Link> 
           </Box>
 
 
-          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>
+          <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(12)} onMouseLeave={() => setIsShown(false)}>
           <Link to='/posts' style={{  textDecoration:'none',}}>
             <ButtonBase 
-              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===1) && {color:'#a84119'}), ...((hoverEffect !== 1) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
+              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===12) && {color:'#a84119'}), ...((hoverEffect !== 12) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
                 <ShopOutlinedIcon /> Official storee 
             </ButtonBase>
           </Link> 
           </Box>
       
 
-       </Stack>
+         </Stack>
 
          {/* <Stack p={2} spacing={1.3} sx={{ width:190,backgroundColor:'white',borderRadius:1 }}>
           
@@ -241,10 +241,10 @@ const BodyOne=()=>{
                  
                /> 
 
-          </Box>
-          <Box>
-                  <BodyOneThree />
-          </Box>
+         </Box>
+         <Box>
+              <BodyOneThree />
+         </Box>
 
     </Stack>
     
