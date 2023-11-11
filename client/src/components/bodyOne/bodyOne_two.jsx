@@ -47,8 +47,9 @@ import img10000 from  '../../assets/bodyone/img18.jpg'
 import style from './BO.css'
 import { ComOne } from "./bodyone_componets";
   
-const BodyOneTwo=({hoverEffect,isShown})=>{
-  const [cursorr,setCursorr]=useState(false)
+const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
+
+  // const [cursorr,setCursorr]=useState(false)
     const [count,setCount]=useState(1)  
       
     useEffect(()=>{
@@ -109,7 +110,7 @@ const BodyOneTwo=({hoverEffect,isShown})=>{
       {(isShown && hoverEffect===1) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
       {(cursorr) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
  
-        <Stack direction='row' spacing={1}>
+      <Stack direction='row' spacing={1}>
 
 
          <IconButton  onClick={()=>{setCount(1)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===1 || count===2 || count===3 || count===4) &&{color:'#86442d'})}}/></IconButton>
@@ -123,7 +124,7 @@ const BodyOneTwo=({hoverEffect,isShown})=>{
          <IconButton  onClick={()=>{setCount(33)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===33 || count===34 || count===35 || count===36) &&{color:'#86442d'})}}/></IconButton>
          <IconButton  onClick={()=>{setCount(37)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===37 || count===38 || count===39 || count===40) &&{color:'#86442d'})}}/></IconButton>
                 
-        </Stack>
+      </Stack>
 
     </Box>
     )
