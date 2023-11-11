@@ -3,7 +3,6 @@ import Brightness1OutlinedIcon from '@mui/icons-material/Brightness1Outlined';
 import Brightness1Icon from '@mui/icons-material/Brightness1';
 import IconButton from '@mui/material/IconButton';
 import { useEffect, useState } from "react";
-
 import img1 from '../../assets/bodyone/img1.jpg'
 import img11 from '../../assets/bodyone/img3.jpg'
 import img111 from '../../assets/bodyone/img12.jpg'
@@ -11,7 +10,6 @@ import img1111 from '../../assets/bodyone/img9.jpg'
 
 
 import img2 from  '../../assets/bodyone/img27.jpg'
-
 import img3 from  '../../assets/bodyone/img15.jpg'
 import img33 from  '../../assets/bodyone/img10.jpg'
 import img333 from  '../../assets/bodyone/img11.jpg'
@@ -58,11 +56,16 @@ import { ComTen } from "./bodyone_componets";
 import { ComEleven } from "./bodyone_componets";
 import { ComTwelve } from "./bodyone_componets";
 
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { ButtonBase } from "@material-ui/core";
+
 const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
 
     // const [cursorr,setCursorr]=useState(false)
     const [count,setCount]=useState(1)  
-      
+      const [cursorTwo,setCursorTwo]=useState(false)
+
     useEffect(()=>{
       const interval=setInterval(()=>{
         setCount((prev)=>prev+1)
@@ -72,11 +75,23 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
         return ()=> clearInterval(interval)
      },[count])
 
-  
+
+    const  handleLeftPress=()=>{
+        setCount((prev)=>prev-4)
+         if(( count <=2 )){setCount(37)}
+     }
+     
+    const  handleRightPress=()=>{
+      setCount((prev)=>prev+4)
+       if(count >=37){setCount(2)}
+    }
+
     return(
     <Box mr={3} sx={{ ...((!isShown ) && { marginLeft:3}),...((cursorr) && { marginLeft:0}) }}> 
 
-      {(!isShown && !cursorr) && (<>
+      {(!isShown && !cursorr) && (
+      
+      <Box onMouseEnter={()=>setCursorTwo(true)} onMouseLeave={()=>setCursorTwo(false)} >
 
       {(count===1)&&<img  src={img1} style={{height:464,width:620 }}/>}
       {(count===2)&&<img  src={img11} style={{ height:464,width:620 }}/>}
@@ -105,7 +120,7 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
       {(count===28)&&<img  src={img7777} style={{height:464,width:620 }}/>}
       
       {(count===29 ||  count===30 ||  count===31 || count===32 )&&<img  src={img8} style={{ height:464,width:620 }}/>}
-      
+    
       {(count===33)&&<img  src={img9} style={{height:464,width:620 }}/>}
       {(count===34)&&<img  src={img99} style={{height:464,width:620 }}/>}
       {(count===35)&&<img  src={img999} style={{height:464,width:620 }}/>}
@@ -116,7 +131,7 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
       {(count===39)&&<img  src={img1000} style={{height:464,width:620 }}/>}
       {(count===40)&&<img  src={img10000} style={{height:464,width:620 }}/>}
 
-        </>)}
+        </Box>)}
 
 
       {(isShown && hoverEffect===1) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
@@ -172,8 +187,24 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
          <IconButton  onClick={()=>{setCount(33)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===33 || count===34 || count===35 || count===36) &&{color:'#86442d'})}}/></IconButton>
          <IconButton  onClick={()=>{setCount(37)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===37 || count===38 || count===39 || count===40) &&{color:'#86442d'})}}/></IconButton>
                 
-      </Stack>
+       </Stack>
      }
+
+    { cursorTwo && <ButtonBase   onClick={handleLeftPress} style={{left:10, bottom:270,position:'relative', }} > <Box sx={{ borderRadius:50, width:40, height:40 ,backgroundColor:'#6b706e'}}>
+         <ArrowBackIosIcon
+          sx={{ marginTop:1,marginLeft:1 ,color:'white'}}
+           />
+         </Box>
+      </ButtonBase>
+   }
+   { cursorTwo && <ButtonBase onClick={handleRightPress} style={{ bottom:270,position:'relative',left:520}} > <Box sx={{ borderRadius:50, width:40, height:40 ,backgroundColor:'#6b706e'}}>
+         <ArrowForwardIosIcon
+          sx={{ marginTop:1,marginLeft:1 ,color:'white'}}
+           />
+         </Box>
+      </ButtonBase>
+   }
+
     </Box>
     )
 }
