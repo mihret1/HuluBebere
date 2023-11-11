@@ -158,7 +158,7 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
 
 
 
-      <Stack direction='row' spacing={1}    justifyContent="center"  sx={{  }}>
+     { (!isShown && !cursorr) && <Stack direction='row' spacing={1}    justifyContent="center"  sx={{ bottom:40, position:'relative' }}>
 
 
          <IconButton  onClick={()=>{setCount(1)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===1 || count===2 || count===3 || count===4) &&{color:'#86442d'})}}/></IconButton>
@@ -173,7 +173,7 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
          <IconButton  onClick={()=>{setCount(37)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===37 || count===38 || count===39 || count===40) &&{color:'#86442d'})}}/></IconButton>
                 
       </Stack>
-
+     }
     </Box>
     )
 }
