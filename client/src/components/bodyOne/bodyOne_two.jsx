@@ -49,7 +49,7 @@ import { ComOne } from "./bodyone_componets";
   
 const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
 
-  // const [cursorr,setCursorr]=useState(false)
+    // const [cursorr,setCursorr]=useState(false)
     const [count,setCount]=useState(1)  
       
     useEffect(()=>{
@@ -65,7 +65,7 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
     return(
     <Box> 
 
-       {(!isShown && !cursorr) && (<>
+      {(!isShown && !cursorr) && (<>
 
       {(count===1)&&<img  src={img1} style={{ height:423,width:620 }}/>}
       {(count===2)&&<img  src={img11} style={{ height:423,width:620 }}/>}
@@ -105,11 +105,17 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
       {(count===39)&&<img  src={img1000} style={{ height:423,width:620 }}/>}
       {(count===40)&&<img  src={img10000} style={{ height:423,width:620 }}/>}
 
-      </>)}
+        </>)}
+
 
       {(isShown && hoverEffect===1) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
       {(cursorr) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
  
+
+
+
+
+
       <Stack direction='row' spacing={1}>
 
 
