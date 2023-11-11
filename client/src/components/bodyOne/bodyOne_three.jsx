@@ -11,8 +11,8 @@ import imgg from '../../assets/bodyone/img5.jpg'
 import { Link } from 'react-router-dom';
 const BodyOneThree=()=>{
     return(
-    <Stack spacing={2}> 
-        <List  sx={{ bgcolor: 'background.paper' ,width:260,height:199, paddingTop:0}}>
+      <Stack spacing={2}> 
+        <List  sx={{ bgcolor: 'background.paper' ,width:260,height:220, paddingTop:0}}>
         
         <Link to='/post' style={{ textDecoration:'none' }}>
 
@@ -52,9 +52,9 @@ const BodyOneThree=()=>{
 </ListItem>
         </Link>
         </List> 
-        <img src={imgg} style={{ width:260 ,height:199}}/>
+        <img src={imgg} style={{ width:260 ,height:220}}/>
 
-    </Stack>
+      </Stack>
     )
 }
 

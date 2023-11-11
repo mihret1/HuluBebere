@@ -74,47 +74,47 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
 
   
     return(
-    <Box> 
+    <Box mr={3} sx={{ ...((!isShown ) && { marginLeft:3}),...((cursorr) && { marginLeft:0}) }}> 
 
       {(!isShown && !cursorr) && (<>
 
-      {(count===1)&&<img  src={img1} style={{ height:423,width:620 }}/>}
-      {(count===2)&&<img  src={img11} style={{ height:423,width:620 }}/>}
-      {(count===3)&&<img  src={img111} style={{ height:423,width:620 }}/>}
-      {(count===4)&&<img  src={img1111} style={{ height:423,width:620 }}/>}
+      {(count===1)&&<img  src={img1} style={{height:464,width:620 }}/>}
+      {(count===2)&&<img  src={img11} style={{ height:464,width:620 }}/>}
+      {(count===3)&&<img  src={img111} style={{ height:464,width:620 }}/>}
+      {(count===4)&&<img  src={img1111} style={{height:464,width:620 }}/>}
       
-      {(count===5 ||  count===6 ||  count=== 7 || count===8 )&&<img  src={img2} style={{ height:423,width:620 }}/>}
+      {(count===5 ||  count===6 ||  count=== 7 || count===8 )&&<img  src={img2} style={{height:464,width:620 }}/>}
 
-      {(count===9)&&<img  src={img3} style={{ height:423,width:620 }}/>}
-      {(count===10)&&<img  src={img33} style={{ height:423,width:620 }}/>}
-      {(count===11)&&<img  src={img333} style={{ height:423,width:620 }}/>}
-      {(count===12)&&<img  src={img3333} style={{ height:423,width:620 }}/>}
+      {(count===9)&&<img  src={img3} style={{height:464,width:620 }}/>}
+      {(count===10)&&<img  src={img33} style={{height:464,width:620 }}/>}
+      {(count===11)&&<img  src={img333} style={{height:464,width:620 }}/>}
+      {(count===12)&&<img  src={img3333} style={{height:464,width:620 }}/>}
       
-      {(count===13 ||  count===14 ||  count=== 15 || count===16 )&&<img  src={img4} style={{ height:423,width:620 }}/>}
+      {(count===13 ||  count===14 ||  count=== 15 || count===16 )&&<img  src={img4} style={{ height:464,width:620 }}/>}
 
-      {(count===17)&&<img  src={img5} style={{ height:423,width:620 }}/>}
-      {(count===18)&&<img  src={img55} style={{ height:423,width:620 }}/>}
-      {(count===19)&&<img  src={img555} style={{ height:423,width:620 }}/>}
-      {(count===20)&&<img  src={img5555} style={{ height:423,width:620 }}/>}
+      {(count===17)&&<img  src={img5} style={{ height:464,width:620 }}/>}
+      {(count===18)&&<img  src={img55} style={{height:464,width:620 }}/>}
+      {(count===19)&&<img  src={img555} style={{height:464,width:620 }}/>}
+      {(count===20)&&<img  src={img5555} style={{ height:464,width:620 }}/>}
       
-      {(count===21 ||  count===22 ||  count=== 23 || count===24 )&&<img  src={img6} style={{ height:423,width:620 }}/>}
+      {(count===21 ||  count===22 ||  count=== 23 || count===24 )&&<img  src={img6} style={{ height:464,width:620 }}/>}
 
-      {(count===25)&&<img  src={img7} style={{ height:423,width:620 }}/>}
-      {(count===26)&&<img  src={img77} style={{ height:423,width:620 }}/>}
-      {(count===27)&&<img  src={img777} style={{ height:423,width:620 }}/>}
-      {(count===28)&&<img  src={img7777} style={{ height:423,width:620 }}/>}
+      {(count===25)&&<img  src={img7} style={{ height:464,width:620 }}/>}
+      {(count===26)&&<img  src={img77} style={{ height:464,width:620 }}/>}
+      {(count===27)&&<img  src={img777} style={{height:464,width:620 }}/>}
+      {(count===28)&&<img  src={img7777} style={{height:464,width:620 }}/>}
       
-      {(count===29 ||  count===30 ||  count===31 || count===32 )&&<img  src={img8} style={{ height:423,width:620 }}/>}
+      {(count===29 ||  count===30 ||  count===31 || count===32 )&&<img  src={img8} style={{ height:464,width:620 }}/>}
       
-      {(count===33)&&<img  src={img9} style={{ height:423,width:620 }}/>}
-      {(count===34)&&<img  src={img99} style={{ height:423,width:620 }}/>}
-      {(count===35)&&<img  src={img999} style={{ height:423,width:620 }}/>}
-      {(count===36)&&<img  src={img9999} style={{ height:423,width:620 }}/>}
+      {(count===33)&&<img  src={img9} style={{height:464,width:620 }}/>}
+      {(count===34)&&<img  src={img99} style={{height:464,width:620 }}/>}
+      {(count===35)&&<img  src={img999} style={{height:464,width:620 }}/>}
+      {(count===36)&&<img  src={img9999} style={{height:464,width:620 }}/>}
 
-      {(count===37)&&<img  src={img10} style={{ height:423,width:620 }}/>}
-      {(count===38)&&<img  src={img100} style={{ height:423,width:620 }}/>}
-      {(count===39)&&<img  src={img1000} style={{ height:423,width:620 }}/>}
-      {(count===40)&&<img  src={img10000} style={{ height:423,width:620 }}/>}
+      {(count===37)&&<img  src={img10} style={{height:464,width:620 }}/>}
+      {(count===38)&&<img  src={img100} style={{height:464,width:620 }}/>}
+      {(count===39)&&<img  src={img1000} style={{height:464,width:620 }}/>}
+      {(count===40)&&<img  src={img10000} style={{height:464,width:620 }}/>}
 
         </>)}
 
@@ -158,7 +158,7 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
 
 
 
-      <Stack direction='row' spacing={1}>
+      <Stack direction='row' spacing={1}    justifyContent="center"  sx={{  }}>
 
 
          <IconButton  onClick={()=>{setCount(1)}} sx={{ width:10,height:10}}><Brightness1Icon  sx={{fontSize:12, ...((count===1 || count===2 || count===3 || count===4) &&{color:'#86442d'})}}/></IconButton>
