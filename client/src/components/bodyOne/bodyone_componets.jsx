@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 export const ComOne=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 1</h3>
@@ -96,7 +96,7 @@ export const ComOne=({cursorr,setCursorr})=>{
 
 export const ComTwo=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white',height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 2</h3>
@@ -184,7 +184,7 @@ export const ComTwo=({cursorr,setCursorr})=>{
 
 export const ComThree=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 3</h3>
@@ -274,7 +274,7 @@ export const ComThree=({cursorr,setCursorr})=>{
 
 export const ComFour=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 4</h3>
@@ -364,7 +364,7 @@ export const ComFour=({cursorr,setCursorr})=>{
 
 export const ComFive=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 5</h3>
@@ -454,7 +454,7 @@ export const ComFive=({cursorr,setCursorr})=>{
 
 export const ComSix=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 6</h3>
@@ -544,7 +544,7 @@ export const ComSix=({cursorr,setCursorr})=>{
 
 export const ComSeven=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 7</h3>
@@ -633,7 +633,7 @@ export const ComSeven=({cursorr,setCursorr})=>{
 
 export const ComEight=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 8</h3>
@@ -722,7 +722,7 @@ export const ComEight=({cursorr,setCursorr})=>{
 
 export const ComNine=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white',height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 9</h3>
@@ -811,7 +811,7 @@ export const ComNine=({cursorr,setCursorr})=>{
 
 export const ComTen=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white',height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 10</h3>
@@ -900,7 +900,7 @@ export const ComTen=({cursorr,setCursorr})=>{
 
 export const ComEleven=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white',height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 11</h3>
@@ -988,7 +988,7 @@ export const ComEleven=({cursorr,setCursorr})=>{
 
 export const ComTwelve=({cursorr,setCursorr})=>{
     return(
-        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white', height:423,width:620 }} spacing={2}>
+        <Stack onMouseEnter={()=>setCursorr(true)} onMouseLeave={()=>setCursorr(false)} sx={{ backgroundColor:'white',height:464,width:620 }} spacing={2}>
            <Stack direction='row' spacing={3}>          
               <Stack spacing={0.5}>
                  <h3>Phone and accesory 12</h3>

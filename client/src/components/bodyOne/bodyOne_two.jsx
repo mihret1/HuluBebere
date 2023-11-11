@@ -46,7 +46,18 @@ import img10000 from  '../../assets/bodyone/img18.jpg'
 
 import style from './BO.css'
 import { ComOne } from "./bodyone_componets";
-  
+import { ComTwo } from "./bodyone_componets";
+import { ComThree } from "./bodyone_componets"; 
+import { ComFour } from "./bodyone_componets";
+import { ComFive } from "./bodyone_componets";
+import { ComSix } from "./bodyone_componets";
+import { ComSeven } from "./bodyone_componets";
+import { ComEight } from "./bodyone_componets";
+import { ComNine } from "./bodyone_componets";
+import { ComTen } from "./bodyone_componets";
+import { ComEleven } from "./bodyone_componets";
+import { ComTwelve } from "./bodyone_componets";
+
 const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
 
     // const [cursorr,setCursorr]=useState(false)
@@ -109,10 +120,41 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
 
 
       {(isShown && hoverEffect===1) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
-      {(cursorr) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===1) && (<ComOne cursorr={cursorr} setCursorr={setCursorr} />)}
  
-
-
+      {(isShown && hoverEffect===2) && (<ComTwo cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===2 ) && (<ComTwo cursorr={cursorr} setCursorr={setCursorr} />)}
+      
+      {(isShown && hoverEffect===3) && (<ComThree cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr  && hoverEffect ===3 ) && (<ComThree cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
+      {(isShown && hoverEffect===4) && (<ComFour cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===4) && (<ComFour cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
+      {(isShown && hoverEffect===5) && (<ComFive cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===5) && (<ComFive cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
+      {(isShown && hoverEffect===6) && (<ComSix cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===6) && (<ComSix cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
+      {(isShown && hoverEffect===7) && (<ComSeven cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===7) && (<ComSeven cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
+      {(isShown && hoverEffect===8) && (<ComEight cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===8) && (<ComEight cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
+      {(isShown && hoverEffect===9) && (<ComNine cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===9) && (<ComNine cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
+      {(isShown && hoverEffect===10) && (<ComTen cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===10) && (<ComTen cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
+      {(isShown && hoverEffect===11) && (<ComEleven cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===11) && (<ComEleven cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
+      {(isShown && hoverEffect===12) && (<ComTwelve cursorr={cursorr} setCursorr={setCursorr} />)}
+      {(cursorr && hoverEffect ===12) && (<ComTwelve cursorr={cursorr} setCursorr={setCursorr} />)}
+ 
 
 
 

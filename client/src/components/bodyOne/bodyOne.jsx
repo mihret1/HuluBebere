@@ -24,8 +24,8 @@ const BodyOne=()=>{
     }
 
     return(
-    <Stack direction='row'  pl={10} pr={5} pt={3} sx={{ height:425 }}>
-         <Stack p={2} spacing={1.3} sx={{ width:190,backgroundColor:'white',borderRadius:1 }}>
+    <Stack direction='row'  pl={10} pr={5} pt={3} sx={{ height:464 }}>
+         <Stack p={2} spacing={1.7} sx={{ width:190,backgroundColor:'white',borderRadius:1 }}>
           
           <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>
           <Link to='/posts' style={{  textDecoration:'none',}}>
@@ -84,7 +84,7 @@ const BodyOne=()=>{
           <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(7)} onMouseLeave={() => setIsShown(false)}>
           <Link to='/posts' style={{  textDecoration:'none',}}>
             <ButtonBase 
-              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===7) && {color:'#a84119'}), ...((hoverEffect !== 8) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
+              sx={{ ...((cursorr ===true) && {color:'#a84119'}) , ...(( hoverEffect===7) && {color:'#a84119'}), ...((hoverEffect !== 7) && {color:'black'}),...((!isShown)&&{color:'black'}),}}>
                 <ShopOutlinedIcon /> Official storee 
             </ButtonBase>
           </Link> 
