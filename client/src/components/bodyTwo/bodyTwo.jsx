@@ -9,6 +9,18 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 import img1 from '../../assets/bodyone/img1.jpg'
 import img2 from '../../assets/bodyone/img7.jpg'
+import img3 from '../../assets/bodyone/img12.jpg'
+import img4 from '../../assets/bodyone/img8.jpg'
+import img5 from '../../assets/bodyone/img21.jpg'
+import img6 from '../../assets/bodyone/img2.jpg'
+import img7 from '../../assets/bodyone/img28.jpg'
+import img8 from '../../assets/bodyone/img3.jpg'
+import img9 from '../../assets/bodyone/img11.jpg'
+import img10 from '../../assets/bodyone/img17.jpg'
+import img12 from '../../assets/bodyone/img5.jpg'
+import img13 from '../../assets/bodyone/img9.jpg'
+import img14 from '../../assets/bodyone/img29.jpg'
+import img11 from '../../assets/bodyone/img24.jpg'
 
 const BodyTwo=()=>{
     const [counter,setCounter]=useState(1)
@@ -25,7 +37,7 @@ const BodyTwo=()=>{
 
     const Componet=(props)=>{
         return(
-            <Box sx={{ width:128,height:160,display:'grid',placeItems:'center' }}>
+            <Box sx={{ width:128,height:180,display:'grid',placeItems:'center' ,":hover":{boxShadow:4},borderRadius:2}}>
             <Link 
                style={{ textDecoration:'none', color:'black' }}
                to={props.linkk}>
@@ -40,22 +52,22 @@ const BodyTwo=()=>{
     const Com1=()=>{
         return(
             <Stack direction='row' spacing={1}>
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img9}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img10}
                            title='sangraina marta'
                            linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img11}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img12}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img13}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img14}
                             title='sangraina marta'
                             linkk='/detail' />
                         <Componet   imgg={img1}
@@ -70,37 +82,84 @@ const BodyTwo=()=>{
     const Com2=()=>{
         return(
             <Stack direction='row' spacing={1}>
-                        <Componet   imgg={img2}
+                        <Componet   imgg={img1}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img2}
                            title='sangraina marta'
                            linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img3}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img4}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img5}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img6}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img7}
                             title='sangraina marta'
                             linkk='/detail' />
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img8}
                             title='sangraina marta'
                             linkk='/detail' />
             </Stack>
         )
     }
 
-    return(
 
-        <Stack direction='row' spacing={1}  sx={{ backgroundColor:'white',borderRadius:2 }} p={1.3}>
+
+    const Cardd=(props)=>{
+        return(
+            <Box sx={{ height:240,width:163,borderRadius:2,":hover":{boxShadow:5}}}>
+              <Link to={props.linke} style={{ textDecoration:'none',color:'black' }}>
+                 <img src={props.imge} style={{ height:156,width:163,borderRadius:2 }}/>
+                 <Box ml={1} mt={2}>
+                  <p style={{ marginTop:2.2 ,marginBottom:2.2}}>{props.title}</p>
+                  <b style={{ marginTop:2.3 }}>{props.price}</b>
+                  <p style={{ textDecoration:'line-through' ,marginTop:2.3}}>{props.rejectPrice}</p>
+                  <span style={{color:'#fa7a21', backgroundColor:'#f6d9d9',padding:3.5,position:'relative',bottom:248,left:113 }}>-38% {props.percent}</span>
+
+                 </Box>
+               </Link>
+            </Box>
+        )
+    }
+    return(
+        <Stack spacing={2}>
+
+          <Stack direction='row' spacing={1}  sx={{ backgroundColor:'white',borderRadius:2 }} p={1.3}>
+             <ButtonBase   onClick={handleLeftPress} style={{ }} > <Box sx={{ borderRadius:50, width:37, height:37 ,backgroundColor:'#6b706e'}}>
+                  <ArrowBackIosIcon
+                  sx={{ marginTop:1.2,marginLeft:1 ,color:'white',fontSize:17}}
+              />
+            </Box>
+            </ButtonBase>
+
+            { counter===1 &&<Com1    />} { counter===2 &&<Com2    />}
+
+
+           <ButtonBase onClick={handleRightPress} style={{ }} > <Box sx={{ borderRadius:50, width:40, height:40 ,backgroundColor:'#6b706e'}}>
+              <ArrowForwardIosIcon
+                sx={{ marginTop:1.2,marginLeft:0.7 ,color:'white',fontSize:17}}             />
+             </Box>
+           </ButtonBase>
+          </Stack>
+
+          <Box pl={2} sx={{ height:309,backgroundColor:'white'}}>
+              <h2 style={{marginBottom:7 }}> Last Viewed</h2>
+             <Cardd 
+                    linke='/detail'
+                     imge={img9}
+                    title='FreePods 4 Active...'
+                    price='APP KSh 4,500'
+                    rejectPrice='Ksh 2909- ksh-890'/>
+          </Box>
+
+          <Stack direction='row' spacing={1}  sx={{ backgroundColor:'white',borderRadius:2 }} p={1.3}>
              <ButtonBase   onClick={handleLeftPress} style={{ }} > <Box sx={{ borderRadius:50, width:37, height:37 ,backgroundColor:'#6b706e'}}>
                   <ArrowBackIosIcon
                   sx={{ marginTop:1.2,marginLeft:1 ,color:'white',fontSize:17}}
@@ -116,7 +175,8 @@ const BodyTwo=()=>{
                 sx={{ marginTop:1.2,marginLeft:0.7 ,color:'white',fontSize:17}}             />
          </Box>
            </ButtonBase>
-        </Stack>
+          </Stack>
+      </Stack>
     )
 }
 
