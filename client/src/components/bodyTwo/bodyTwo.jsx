@@ -24,6 +24,14 @@ import img11 from '../../assets/bodyone/img24.jpg'
 import v1 from '../../assets/v1.jpg'
 import v2 from '../../assets/v2.jpg'
 
+import s1 from '../../assets/s1.jpg'
+import s2 from '../../assets/s2.jpg'
+import s3 from '../../assets/s3.jpg'
+import s4 from '../../assets/s4.jpg'
+import s5 from '../../assets/s5.jpg'
+import s6 from '../../assets/s6.jpg'
+
+
 const BodyTwo=()=>{
     const [counter,setCounter]=useState(1)
 
@@ -194,6 +202,50 @@ const BodyTwo=()=>{
          </Box>
            </ButtonBase>
           </Stack>
+
+          <Box pl={2} sx={{ height:315,backgroundColor:'white'}}>
+              <h2 style={{marginBottom:7 }}> <b>Last Searched </b>| shoes</h2>
+              <Link style={{ textDecoration:'none',color:'orange',position:'relative', left:1080 ,top:-30}}> SEE ALL <ArrowForwardIosIcon sx={{fontSize:20,top:5,position:'relative'}}/> </Link>
+              <Stack direction='row' spacing={3}>
+              <Cardd 
+                    linke='/detail'
+                     imge={s1}
+                    title='FreePods 4 Active...'
+                    price='APP KSh 4,500'
+                    rejectPrice='Ksh 2909- ksh-890'/>
+                     <Cardd 
+                    linke='/detail'
+                     imge={s2}
+                    title='FreePods 4 Active...'
+                    price='APP KSh 4,500'
+                    rejectPrice='Ksh 2909- ksh-890'/>
+                     <Cardd 
+                    linke='/detail'
+                     imge={s3}
+                    title='FreePods 4 Active...'
+                    price='APP KSh 4,500'
+                    rejectPrice='Ksh 2909- ksh-890'/>
+                    <Cardd 
+                    linke='/detail'
+                     imge={s4}
+                    title='FreePods 4 Active...'
+                    price='APP KSh 4,500'
+                    rejectPrice='Ksh 2909- ksh-890'/>
+                     <Cardd 
+                    linke='/detail'
+                     imge={s5}
+                    title='FreePods 4 Active...'
+                    price='APP KSh 4,500'
+                    rejectPrice='Ksh 2909- ksh-890'/>
+                     <Cardd 
+                    linke='/detail'
+                     imge={s6}
+                    title='FreePods 4 Active...'
+                    price='APP KSh 4,500'
+                    rejectPrice='Ksh 2909- ksh-890'/>
+              </Stack>
+            
+          </Box>
       </Stack>
     )
 }
