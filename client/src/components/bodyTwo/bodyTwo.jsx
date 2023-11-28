@@ -21,6 +21,8 @@ import img12 from '../../assets/bodyone/img5.jpg'
 import img13 from '../../assets/bodyone/img9.jpg'
 import img14 from '../../assets/bodyone/img29.jpg'
 import img11 from '../../assets/bodyone/img24.jpg'
+import v1 from '../../assets/v1.jpg'
+import v2 from '../../assets/v2.jpg'
 
 const BodyTwo=()=>{
     const [counter,setCounter]=useState(1)
@@ -149,14 +151,30 @@ const BodyTwo=()=>{
            </ButtonBase>
           </Stack>
 
-          <Box pl={2} sx={{ height:309,backgroundColor:'white'}}>
+          <Box pl={2} sx={{ height:315,backgroundColor:'white'}}>
               <h2 style={{marginBottom:7 }}> Last Viewed</h2>
-             <Cardd 
+              <Link style={{ textDecoration:'none',color:'orange',position:'relative', left:1080 ,top:-30}}> SEE ALL <ArrowForwardIosIcon sx={{fontSize:20,top:5,position:'relative'}}/> </Link>
+              <Stack direction='row' spacing={1}>
+              <Cardd 
+                    linke='/detail'
+                     imge={v1}
+                    title='FreePods 4 Active...'
+                    price='APP KSh 4,500'
+                    rejectPrice='Ksh 2909- ksh-890'/>
+                     <Cardd 
+                    linke='/detail'
+                     imge={v2}
+                    title='FreePods 4 Active...'
+                    price='APP KSh 4,500'
+                    rejectPrice='Ksh 2909- ksh-890'/>
+                     <Cardd 
                     linke='/detail'
                      imge={img9}
                     title='FreePods 4 Active...'
                     price='APP KSh 4,500'
                     rejectPrice='Ksh 2909- ksh-890'/>
+              </Stack>
+            
           </Box>
 
           <Stack direction='row' spacing={1}  sx={{ backgroundColor:'white',borderRadius:2 }} p={1.3}>
