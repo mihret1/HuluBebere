@@ -3,11 +3,12 @@ import {Box, Button, Stack} from '@mui/material'
 import { useState } from 'react'
 // import ButtonBase from '@mui/material'
 import {Link} from 'react-router-dom'
-import img1 from '../../assets/bodyone/img1.jpg'
 import { ButtonBase } from "@material-ui/core";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
+import img1 from '../../assets/bodyone/img1.jpg'
+import img2 from '../../assets/bodyone/img7.jpg'
 
 const BodyTwo=()=>{
     const [counter,setCounter]=useState(1)
@@ -69,7 +70,7 @@ const BodyTwo=()=>{
     const Com2=()=>{
         return(
             <Stack direction='row' spacing={1}>
-                        <Componet   imgg={img1}
+                        <Componet   imgg={img2}
                             title='sangraina marta'
                             linkk='/detail' />
                         <Componet   imgg={img1}
@@ -105,13 +106,16 @@ const BodyTwo=()=>{
                   sx={{ marginTop:1.2,marginLeft:1 ,color:'white',fontSize:17}}
               />
             </Box>
-           </ButtonBase>
-           <Com1    />
+            </ButtonBase>
+
+            { counter===1 &&<Com1    />} { counter===2 &&<Com2    />}
+
+
            <ButtonBase onClick={handleRightPress} style={{ }} > <Box sx={{ borderRadius:50, width:40, height:40 ,backgroundColor:'#6b706e'}}>
               <ArrowForwardIosIcon
                 sx={{ marginTop:1.2,marginLeft:0.7 ,color:'white',fontSize:17}}             />
          </Box>
-      </ButtonBase>
+           </ButtonBase>
         </Stack>
     )
 }
