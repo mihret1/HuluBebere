@@ -5,10 +5,10 @@ import BodyTwo from "../bodyTwo/bodyTwo"
 
 const Home=()=>{
     return(
-        <Box>
+        <Stack spacing={2} ml={8} mr={9}>
            <BodyOne />
            <BodyTwo />
-        </Box>
+        </Stack>
     )
 }
 

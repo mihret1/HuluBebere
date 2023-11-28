@@ -24,7 +24,7 @@ const BodyOne=()=>{
     }
 
     return(
-    <Stack direction='row'  pl={10}  pt={3} sx={{ height:464 }}>
+    <Stack direction='row'    pt={3} sx={{ height:464 }}>
          <Stack p={2} spacing={1.7} sx={{ width:190,backgroundColor:'white',borderRadius:1 }}>
           
           <Box  sx={{ width:220,}} onMouseEnter={()=>mouseEnterr(1)} onMouseLeave={() => setIsShown(false)}>

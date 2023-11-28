@@ -58,6 +58,7 @@ import { ComTwelve } from "./bodyone_componets";
 
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 import { ButtonBase } from "@material-ui/core";
 
 const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
@@ -91,45 +92,45 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
 
       {(!isShown && !cursorr) && (
       
-      <Box onMouseEnter={()=>setCursorTwo(true)} onMouseLeave={()=>setCursorTwo(false)} >
+        <Box onMouseEnter={()=>setCursorTwo(true)} onMouseLeave={()=>setCursorTwo(false)} >
 
-      {(count===1)&&<img  src={img1} style={{height:464,width:620 }}/>}
-      {(count===2)&&<img  src={img11} style={{ height:464,width:620 }}/>}
-      {(count===3)&&<img  src={img111} style={{ height:464,width:620 }}/>}
-      {(count===4)&&<img  src={img1111} style={{height:464,width:620 }}/>}
+      {(count===1)&&<img  src={img1} style={{height:464,width:665 }}/>}
+      {(count===2)&&<img  src={img11} style={{ height:464,width:665 }}/>}
+      {(count===3)&&<img  src={img111} style={{ height:464,width:665 }}/>}
+      {(count===4)&&<img  src={img1111} style={{height:464,width:665 }}/>}
       
-      {(count===5 ||  count===6 ||  count=== 7 || count===8 )&&<img  src={img2} style={{height:464,width:620 }}/>}
+      {(count===5 ||  count===6 ||  count=== 7 || count===8 )&&<img  src={img2} style={{height:464,width:665 }}/>}
 
-      {(count===9)&&<img  src={img3} style={{height:464,width:620 }}/>}
-      {(count===10)&&<img  src={img33} style={{height:464,width:620 }}/>}
-      {(count===11)&&<img  src={img333} style={{height:464,width:620 }}/>}
-      {(count===12)&&<img  src={img3333} style={{height:464,width:620 }}/>}
+      {(count===9)&&<img  src={img3} style={{height:464,width:665 }}/>}
+      {(count===10)&&<img  src={img33} style={{height:464,width:665 }}/>}
+      {(count===11)&&<img  src={img333} style={{height:464,width:665 }}/>}
+      {(count===12)&&<img  src={img3333} style={{height:464,width:665}}/>}
       
-      {(count===13 ||  count===14 ||  count=== 15 || count===16 )&&<img  src={img4} style={{ height:464,width:620 }}/>}
+      {(count===13 ||  count===14 ||  count=== 15 || count===16 )&&<img  src={img4} style={{ height:464,width:665 }}/>}
 
-      {(count===17)&&<img  src={img5} style={{ height:464,width:620 }}/>}
-      {(count===18)&&<img  src={img55} style={{height:464,width:620 }}/>}
-      {(count===19)&&<img  src={img555} style={{height:464,width:620 }}/>}
-      {(count===20)&&<img  src={img5555} style={{ height:464,width:620 }}/>}
+      {(count===17)&&<img  src={img5} style={{ height:464,width:665 }}/>}
+      {(count===18)&&<img  src={img55} style={{height:464,width:665 }}/>}
+      {(count===19)&&<img  src={img555} style={{height:464,width:665 }}/>}
+      {(count===20)&&<img  src={img5555} style={{ height:464,width:665 }}/>}
       
-      {(count===21 ||  count===22 ||  count=== 23 || count===24 )&&<img  src={img6} style={{ height:464,width:620 }}/>}
+      {(count===21 ||  count===22 ||  count=== 23 || count===24 )&&<img  src={img6} style={{ height:464,width:665 }}/>}
 
-      {(count===25)&&<img  src={img7} style={{ height:464,width:620 }}/>}
-      {(count===26)&&<img  src={img77} style={{ height:464,width:620 }}/>}
-      {(count===27)&&<img  src={img777} style={{height:464,width:620 }}/>}
-      {(count===28)&&<img  src={img7777} style={{height:464,width:620 }}/>}
+      {(count===25)&&<img  src={img7} style={{ height:464,width:665}}/>}
+      {(count===26)&&<img  src={img77} style={{ height:464,width:665}}/>}
+      {(count===27)&&<img  src={img777} style={{height:464,width:665}}/>}
+      {(count===28)&&<img  src={img7777} style={{height:464,width:665 }}/>}
       
-      {(count===29 ||  count===30 ||  count===31 || count===32 )&&<img  src={img8} style={{ height:464,width:620 }}/>}
+      {(count===29 ||  count===30 ||  count===31 || count===32 )&&<img  src={img8} style={{ height:464,width:665 }}/>}
     
-      {(count===33)&&<img  src={img9} style={{height:464,width:620 }}/>}
-      {(count===34)&&<img  src={img99} style={{height:464,width:620 }}/>}
-      {(count===35)&&<img  src={img999} style={{height:464,width:620 }}/>}
-      {(count===36)&&<img  src={img9999} style={{height:464,width:620 }}/>}
+      {(count===33)&&<img  src={img9} style={{height:464,width:665 }}/>}
+      {(count===34)&&<img  src={img99} style={{height:464,width:665 }}/>}
+      {(count===35)&&<img  src={img999} style={{height:464,width:665 }}/>}
+      {(count===36)&&<img  src={img9999} style={{height:464,width:665 }}/>}
 
-      {(count===37)&&<img  src={img10} style={{height:464,width:620 }}/>}
-      {(count===38)&&<img  src={img100} style={{height:464,width:620 }}/>}
-      {(count===39)&&<img  src={img1000} style={{height:464,width:620 }}/>}
-      {(count===40)&&<img  src={img10000} style={{height:464,width:620 }}/>}
+      {(count===37)&&<img  src={img10} style={{height:464,width:665 }}/>}
+      {(count===38)&&<img  src={img100} style={{height:464,width:665 }}/>}
+      {(count===39)&&<img  src={img1000} style={{height:464,width:665 }}/>}
+      {(count===40)&&<img  src={img10000} style={{height:464,width:665 }}/>}
 
         </Box>)}
 
@@ -190,7 +191,8 @@ const BodyOneTwo=({hoverEffect,isShown,cursorr,setCursorr})=>{
        </Stack>
      }
 
-    { cursorTwo && <ButtonBase   onClick={handleLeftPress} style={{left:10, bottom:270,position:'relative', }} > <Box sx={{ borderRadius:50, width:40, height:40 ,backgroundColor:'#6b706e'}}>
+    { cursorTwo && 
+      <ButtonBase   onClick={handleLeftPress} style={{left:10, bottom:270,position:'relative', }} > <Box sx={{ borderRadius:50, width:40, height:40 ,backgroundColor:'#6b706e'}}>
          <ArrowBackIosIcon
           sx={{ marginTop:1,marginLeft:1 ,color:'white'}}
            />
