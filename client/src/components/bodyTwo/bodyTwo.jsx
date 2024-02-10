@@ -206,13 +206,15 @@ const BodyTwo=()=>{
           <Box pl={2} sx={{ height:315,backgroundColor:'white'}}>
               <h2 style={{marginBottom:7 }}> <b>Last Searched </b>| shoes</h2>
               <Link style={{ textDecoration:'none',color:'orange',position:'relative', left:1080 ,top:-30}}> SEE ALL <ArrowForwardIosIcon sx={{fontSize:20,top:5,position:'relative'}}/> </Link>
+              
               <Stack direction='row' spacing={3}>
               <Cardd 
                     linke='/detail'
                      imge={s1}
                     title='FreePods 4 Active...'
                     price='APP KSh 4,500'
-                    rejectPrice='Ksh 2909- ksh-890'/>
+                    rejectPrice='Ksh 2909- ksh-890'
+                    />
                      <Cardd 
                     linke='/detail'
                      imge={s2}
