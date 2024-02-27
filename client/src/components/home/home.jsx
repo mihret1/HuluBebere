@@ -4,7 +4,7 @@ import { ComOne } from "../bodyOne/bodyone_componets"
 import BodyTwo from "../bodyTwo/bodyTwo"
 import BodyThree from "../bodyThree/bodyThree"
 
-
+import BodyFour from "../bodyFour/bodyFour"
 
 const Home=()=>{
     return(
@@ -12,6 +12,7 @@ const Home=()=>{
            <BodyOne />
            <BodyTwo />
            <BodyThree />
+           <BodyFour />
         </Stack>
     )
 }
