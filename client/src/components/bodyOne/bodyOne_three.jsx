@@ -14,7 +14,7 @@ const BodyOneThree=()=>{
       <Stack spacing={2}> 
         <List  sx={{ bgcolor: 'background.paper' ,width:260,height:220, paddingTop:0}}>
         
-        <Link to='/post' style={{ textDecoration:'none' }}>
+        <Link to='/post' style={{ textDecoration:'none',color:'black' }}>
 
           <ListItem>
             <ListItemAvatar>
@@ -27,7 +27,7 @@ const BodyOneThree=()=>{
           </ListItem>
         </Link>
 
-        <Link to='/post' style={{ textDecoration:'none' }}>
+        <Link to='/post' style={{ textDecoration:'none',color:'black' }}>
 
 <ListItem>
   <ListItemAvatar>
@@ -39,7 +39,7 @@ const BodyOneThree=()=>{
   
 </ListItem>
         </Link>
-        <Link to='/post' style={{ textDecoration:'none' }}>
+        <Link to='/post' style={{ textDecoration:'none',color:'black' }}>
 
 <ListItem>
   <ListItemAvatar>

@@ -5,6 +5,13 @@ import BodyTwo from "../bodyTwo/bodyTwo"
 import BodyThree from "../bodyThree/bodyThree"
 
 import BodyFour from "../bodyFour/bodyFour"
+import BodyFive from "../bodyFive/bodyFive"
+import BodyFive_Two from "../bodyFive/bodyFive_two"
+import BodyFive_Three from "../bodyFive/bodyFive_Three"
+import BodySix from "../bodySix/bodySix"
+import BodySixTwo from "../bodySix/body_six-two"
+import BodySixThree from "../bodySix/bodysix_three"
+import BodySeven from "../bodySeven/bodySeven"
 
 const Home=()=>{
     return(
@@ -13,6 +20,14 @@ const Home=()=>{
            <BodyTwo />
            <BodyThree />
            <BodyFour />
+           <BodyFive />
+           <BodyFive_Two />
+           <BodyFive_Three />
+           <BodySix />
+           <BodySixTwo />
+           <BodySixThree />
+           <BodySeven/>
+
         </Stack>
     )
 }

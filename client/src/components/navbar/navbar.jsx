@@ -113,15 +113,13 @@ const Navbar=()=>{
                   </Button>
                    
                   <Button  sx={{ 
-                           ...(acolor ===true &&{
-                            backgroundColor:'grey'
-                           }),
-                            color:'black',                 
-                           ":hover": {
-                            color: "#a84119"
-                                   },
-                            height:36       
-                                }} 
+                           
+                           ...(acolor ===true &&{ backgroundColor:'grey'}),
+                            color:'black',  
+                            height:36 ,                     
+                           ":hover": {color: "#a84119"},
+                                
+                        }} 
 
                        onClick={handleAccountClick}> <ManageAccountsOutlinedIcon /> Account <KeyboardArrowDownOutlinedIcon />
                     </Button>
@@ -160,7 +158,8 @@ const Navbar=()=>{
                      <Menu
                         anchorEl={anchorEH}
                         open={openH}
-                        onClose={closeH}>
+                        onClose={closeH}
+                    >
 
                        
                         <MenuItem onClick={()=>{}}> Help Center</MenuItem>
