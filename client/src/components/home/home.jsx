@@ -19,7 +19,9 @@ import BodyEightFour from "../bodyEight/bodyEightFour"
 import BodySevenTwo from "../bodySeven/bodySeventwo"
 import BodyEightFive from "../bodyEight/bodyEightFive"
 import BodyNine from "../bodyNine/bodyNine"
-
+import BodyTen from "../bodyTen/bodyTen"
+import BodyTenTwo from "../bodyTen/bodyTenTwo"
+import BodyTenThree from "../bodyTen/bodyTenThree"
 const Home=()=>{
     return(
         <Stack spacing={2} ml={8} mr={9}>
@@ -41,7 +43,10 @@ const Home=()=>{
            <BodySevenTwo />
            <BodyEightFive />
            <BodyNine />
-
+           <BodyTen />
+           <BodyTenTwo />
+           <BodyTenThree />
+            
         </Stack>
     )
 }
