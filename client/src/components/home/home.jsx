@@ -18,6 +18,7 @@ import BodyEightThree from "../bodyEight/bodyEightThree"
 import BodyEightFour from "../bodyEight/bodyEightFour"
 import BodySevenTwo from "../bodySeven/bodySeventwo"
 import BodyEightFive from "../bodyEight/bodyEightFive"
+import BodyNine from "../bodyNine/bodyNine"
 
 const Home=()=>{
     return(
@@ -39,6 +40,7 @@ const Home=()=>{
            <BodyEightFour />
            <BodySevenTwo />
            <BodyEightFive />
+           <BodyNine />
 
         </Stack>
     )
